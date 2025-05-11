@@ -26,4 +26,11 @@ public class HelloControllerTest {
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.content().string("Hello, Git Demo!"));
     }
+
+    @Test
+    public void testAnotherDemoEndpoint() throws Exception {
+        mockMvc.perform(MockMvcRequestBuilders.get("/demo2"))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.content().string("Hello, Git Demo2!"));
+    }
 }

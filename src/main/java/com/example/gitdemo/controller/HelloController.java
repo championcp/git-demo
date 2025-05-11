@@ -15,4 +15,9 @@ public class HelloController {
     public String demo() {
         return "Hello, Git Demo!";
     }
+
+    @GetMapping("/demo2")
+    public String Demo2() {
+        return "Hello, Git Demo2!";
+    }
 }
