@@ -10,4 +10,9 @@ public class HelloController {
     public String hello() {
         return "Hello, Git Demo!";
     }
+
+    @GetMapping("/demo")
+    public String demo() {
+        return "Hello, Git Demo!";
+    }
 }
