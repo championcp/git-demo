@@ -20,4 +20,20 @@ public class HelloController {
     public String Demo2() {
         return "Hello, Git Demo2!";
     }
+
+    @GetMapping("/helloUser")
+    public String helloUser() {
+        User user = new User();
+        user.setId(1L);
+        user.setUsername("John Doe");
+        user.setEmail(" user = new User();
+        user.setId(1L);
+        user.setUsername("John Doe");
+        user.setEmail("EMAIL");
+        user.setPassword("password");
+        user.setRole(1L);
+
+        return "Hello, " + user.getUsername() + " !";
+    }
+        
 }

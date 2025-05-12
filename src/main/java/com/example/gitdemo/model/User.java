@@ -4,6 +4,8 @@ public class User {
     private Long id;
     private String username;
     private String email;
+    private String password;
+    private String role;
 
     public User() {
     }
@@ -36,6 +38,21 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Long getRole() {
+        return role;
+    }
+    public void setRole(Long role) {
+        this.role = role;
     }
 
     @Override
