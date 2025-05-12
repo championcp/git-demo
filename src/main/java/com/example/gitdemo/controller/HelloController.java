@@ -36,4 +36,8 @@ public class HelloController {
         return "Hello, " + user.getUsername() + " !";
     }
         
+    @GetMapping("/demo3")
+    public String Demo3() {
+        return "Hello, Git Demo3!";
+    }
 }
